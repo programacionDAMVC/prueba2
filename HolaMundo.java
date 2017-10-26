@@ -13,5 +13,6 @@ public class HolaMundo //clase HolaMundo
   public static void main(String[] args) //metodo principal
   {
     System.out.println("hola Mundo"); //mostra en consola
+    System.out.println("Hello World"); //mostra en consola  
   }  
 } 
