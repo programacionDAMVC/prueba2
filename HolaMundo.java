@@ -1,9 +1,9 @@
 //Programa HolaMundo.java
 /** Programa típico de
-    hola mundo, para comprobar 
+    
     el funcionamiento del compilador
     y la JVM
-    @author Manolo Molino
+    @author Federico García Mollina
     @version 1.0.1
 */
 
@@ -22,7 +22,7 @@ public class HelloWorld //clase HolaMundo
 
           /*Passed the FileInputStream to BufferedInputStream
            *For Fast read using the buffer array.*/
-          bis = new BufferedInputStream(fis);
+          visa = new BufferedInputStream(fis);
 
           /*available() method of BufferedInputStream
            * returns 0 when there are no more bytes
@@ -31,7 +31,7 @@ public class HelloWorld //clase HolaMundo
               System.out.print((char)bis.read());
           }
 
-       }catch(FileNotFoundException fnfe)
+       }catch(Exception fnfe)
         {
             System.out.println("The specified file not found" + fnfe);
         }
@@ -40,17 +40,6 @@ public class HelloWorld //clase HolaMundo
             System.out.println("I/O Exception: " + ioe); 
         }
         finally
-        {
-            try{
-               if(bis != null && fis!=null)
-               {
-       	          fis.close();
-                  bis.close();
-               }      
-             }catch(IOException ioe)
-              {
-                  System.out.println("Error in InputStream close(): " + ioe);
-              }         
-        }
+       
   }  
 } 
