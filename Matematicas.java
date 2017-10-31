@@ -4,5 +4,13 @@ public class Matematicas {
         return numero % 2 == 0;
     }
 
-    //nuevos metodos
+    public static boolean esDivisiblePorTres (int numero) {
+        return numero % 3 == 0;
+    }
+
+    public static boolean esDivisiblePorCinco (int numero) {
+        return numero % 5 == 0;
+    }
+
+    
 }
